@@ -2,25 +2,16 @@
 class Cosm < Formula
   desc "CLI tool for developing Cosmos SDK apps."
   homepage "https://github.com/allinbits/cosm"
-  version "0.0.9"
+  version "0.0.10"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/allinbits/cosm/releases/download/v0.0.9/cosm_0.0.9_Darwin_x86_64.tar.gz"
-    sha256 "0e4a54c076d717e9593484a4577eee3c090693dd54ad5cb8ed1617853152d75d"
+    url "https://github.com/allinbits/cosm/releases/download/v0.0.10/cosm_0.0.10_Darwin_x86_64.tar.gz"
+    sha256 "4a2b0b8eefd5f3d17e99d762c32b692e5815ef44ef0be13709b72a774a2531c1"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/allinbits/cosm/releases/download/v0.0.9/cosm_0.0.9_Linux_x86_64.tar.gz"
-      sha256 "46c16e8ee0b2e1617cbbf5701ae3285c3b8cf0e042e4c88363140f40dc1794a3"
-    end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/allinbits/cosm/releases/download/v0.0.9/cosm_0.0.9_Linux_arm64.tar.gz"
-        sha256 "1ae1dc46ee27db9b205df41ca3ff894891d4cbceb9a63b74c36d87a4bd52b94c"
-      else
-        url "https://github.com/allinbits/cosm/releases/download/v0.0.9/cosm_0.0.9_Linux_armv6.tar.gz"
-        sha256 "adedfb726107eb5ccb322d1077f69c5b6e92c53b90d8db26304bab6693d4b386"
-      end
+      url "https://github.com/allinbits/cosm/releases/download/v0.0.10/cosm_0.0.10_Linux_x86_64.tar.gz"
+      sha256 "d7538f1ed4c11e4374f7fd91ef1e634e6167bae956a3b8599048ff33a1545587"
     end
   end
 

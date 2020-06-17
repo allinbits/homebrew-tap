@@ -2,16 +2,16 @@
 class Cosm < Formula
   desc "CLI tool for developing Cosmos SDK apps."
   homepage "https://github.com/allinbits/cosm"
-  version "0.0.30"
+  version "0.0.31"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/allinbits/cosm/releases/download/v0.0.30/cosm_0.0.30_darwin_amd64.tar.gz"
-    sha256 "d29390332cac81e6a722b382d30bd51e2b1b5e7f29478bd03b264c356ca1510d"
+    url "https://github.com/allinbits/cosm/releases/download/v0.0.31/cosm_0.0.31_darwin_amd64.tar.gz"
+    sha256 "8d8060b6bbf9f7967e910801895a4e93583bcc1583655d4acdcf216e7ec601c6"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/allinbits/cosm/releases/download/v0.0.30/cosm_0.0.30_linux_amd64.tar.gz"
-      sha256 "b7f020955c7f3428de0f0a2de5f0660d264a708580f57721aa81b24dd7cd77ae"
+      url "https://github.com/allinbits/cosm/releases/download/v0.0.31/cosm_0.0.31_linux_amd64.tar.gz"
+      sha256 "a5e6cecc83e097c25204b5952295cf815c11cce01f2b6620b5cc1f6cf3b48d73"
     end
   end
 
